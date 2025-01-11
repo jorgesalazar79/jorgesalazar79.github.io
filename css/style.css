@@ -339,7 +339,12 @@ form {
 .navbar {
   background: var(--primary);
   position: sticky;
-  top: 0; }
+  top: 0; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px; 
+}
 
 /*====Nabvar header===*/
   .navbar-header {
@@ -363,7 +368,12 @@ form {
   .navbar-item {
     width: 100%; }
   .navbar-link {
-    display: inline-block; }
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit; }
 
 /*====Fin del  Nabvar header===*/
 /*====Estilos y configuració del menu responsive===*/
@@ -384,7 +394,8 @@ form {
     position: absolute;
     z-index: 50;
     overflow: hidden;
-    align-items: center; }
+    align-items: center;
+    gap: 15px; }
   .show {
     height: 300px;
     z-index: 50;
@@ -442,6 +453,8 @@ form {
     position: sticky !important;
     position: -webkit-sticky !important;
     top: 0;
+    padding: 0 20px;
+    height: 70px;
     padding-right: 1rem; }
   .navbar-header {
     border-bottom: 0; }
@@ -699,7 +712,25 @@ form {
 
 #gallery,
 #contacto {
-  padding-top: 4rem; }
+      margin-top: 50px;
+      padding: 20px;
+      background-color: #f4f4f4;
+      border-top: 1px solid #ddd;
+  }
+  
+  #contacto h1 {
+      color: #333;
+  }
+  
+  #contacto a {
+      color: #3273dc; /* Color azul de Bulma */
+      text-decoration: underline;
+  }
+  
+  #contacto a:hover {
+      color: #2754a0; /* Azul más oscuro */
+  }
+  
 
 .gallery-container {
   display: grid;
@@ -765,3 +796,25 @@ figcaption {
 @media (min-width: 1023px) {
   .gallery-container {
     grid-template-columns: repeat(4, 1fr); } }
+
+
+    #agradecimientos {
+      margin-top: 50px;
+      padding: 20px;
+      background-color: #f4f4f4;
+      border-top: 1px solid #ddd;
+  }
+  
+  #agradecimientos h1 {
+      color: #333;
+  }
+  
+  #agradecimientos a {
+      color: #3273dc; /* Color azul de Bulma */
+      text-decoration: underline;
+  }
+  
+  #agradecimientos a:hover {
+      color: #2754a0; /* Azul más oscuro */
+  }
+  
